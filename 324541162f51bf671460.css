@@ -46,9 +46,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="number"] {
+input:not([type="submit"]) {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
