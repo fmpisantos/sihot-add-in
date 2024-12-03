@@ -1,0 +1,1055 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Get the date from the system.",
+            "id": "SIHOTGETDATE",
+            "name": "SIHOTGETDATE",
+            "parameters": [
+                {
+                    "name": "date",
+                    "type": "string"
+                },
+                {
+                    "description": "Command string",
+                    "name": "cmd",
+                    "type": "string"
+                },
+                {
+                    "description": "Additional string parameter",
+                    "name": "oFS",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Get the turnover for a specific hotel and account.",
+            "id": "SIHOTGETTURNOVER",
+            "name": "SIHOTGETTURNOVER",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Account number",
+                    "name": "kto",
+                    "type": "number"
+                },
+                {
+                    "description": "Whether to include net turnover",
+                    "name": "netto",
+                    "type": "boolean"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get the Z-Statistics or Budget information.",
+            "id": "SIHOTDOGETZSTATISTIC",
+            "name": "SIHOTDOGETZSTATISTIC",
+            "parameters": [
+                {
+                    "description": "Whether to fetch budget data or not",
+                    "name": "isBudget",
+                    "type": "boolean"
+                },
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Type of statistics",
+                    "name": "typ",
+                    "type": "string"
+                },
+                {
+                    "description": "Key for filtering the data",
+                    "name": "key",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get hotel name",
+            "id": "SIHOTGETHOTELINFO",
+            "name": "SIHOTGETHOTELINFO",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Get the guest information based on guest number.",
+            "id": "SIHOTGETGUESTINFO",
+            "name": "SIHOTGETGUESTINFO",
+            "parameters": [
+                {
+                    "description": "The guest number.",
+                    "name": "guestNo",
+                    "type": "string"
+                },
+                {
+                    "description": "The format for the response.",
+                    "name": "format",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Get the initial forecast for a given hotel and other parameters.",
+            "id": "SIHOTGETINITFORECAST",
+            "name": "SIHOTGETINITFORECAST",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The area of interest.",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "The scope of the forecast.",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "The market code.",
+                    "name": "marketCode",
+                    "type": "string"
+                },
+                {
+                    "description": "The category.",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Additional flag.",
+                    "name": "flag",
+                    "type": "string"
+                },
+                {
+                    "description": "The start date.",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "The end date.",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "The max start date.",
+                    "name": "maxVon",
+                    "type": "string"
+                },
+                {
+                    "description": "The max end date.",
+                    "name": "maxBis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get the initial rooms on the books for a given hotel and parameters.",
+            "id": "SIHOTGETINITROOMSONTHEBOOKS",
+            "name": "SIHOTGETINITROOMSONTHEBOOKS",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The area of interest.",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "The scope of the forecast.",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "The market code.",
+                    "name": "marketCode",
+                    "type": "string"
+                },
+                {
+                    "description": "The category.",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Additional flag.",
+                    "name": "flag",
+                    "type": "string"
+                },
+                {
+                    "description": "The start date.",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "The end date.",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "The max start date.",
+                    "name": "maxVon",
+                    "type": "string"
+                },
+                {
+                    "description": "The max end date.",
+                    "name": "maxBis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get the initial rooms on the books for a given hotel per date.",
+            "id": "SIHOTGETINITROOMSONTHEBOOKSPERDATE",
+            "name": "SIHOTGETINITROOMSONTHEBOOKSPERDATE",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The area of interest.",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "The scope of the forecast.",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "The market code.",
+                    "name": "marketCode",
+                    "type": "string"
+                },
+                {
+                    "description": "The category.",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Additional flag.",
+                    "name": "flag",
+                    "type": "string"
+                },
+                {
+                    "description": "The start date.",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "The end date.",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "The max start date.",
+                    "name": "maxVon",
+                    "type": "string"
+                },
+                {
+                    "description": "The max end date.",
+                    "name": "maxBis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Get the value of rooms on the books for a given date.",
+            "id": "SIHOTGETDATEVALUEROOMSONTHEBOOKSPERDATE",
+            "name": "SIHOTGETDATEVALUEROOMSONTHEBOOKSPERDATE",
+            "parameters": [
+                {
+                    "description": "The room availability data.",
+                    "name": "roomsOnTheBooksPerDate",
+                    "type": "string"
+                },
+                {
+                    "description": "The date for which to get the room value.",
+                    "name": "requestedDate",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Fetches pool information for a given hotel, pool index, and type.",
+            "id": "SIHOTGETPOOL",
+            "name": "SIHOTGETPOOL",
+            "parameters": [
+                {
+                    "description": "The hotel number to retrieve the pool information for.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The pool index.",
+                    "name": "idx",
+                    "type": "number"
+                },
+                {
+                    "description": "The pool type.",
+                    "name": "typ",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Fetches turnover description for a given hotel and account number.",
+            "id": "SIHOTGETTURNOVERDESC",
+            "name": "SIHOTGETTURNOVERDESC",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The account number.",
+                    "name": "kto",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Fetches text information for a given text ID and type.",
+            "id": "SIHOTGETTEXT",
+            "name": "SIHOTGETTEXT",
+            "parameters": [
+                {
+                    "description": "The ID of the text to retrieve.",
+                    "name": "textID",
+                    "type": "number"
+                },
+                {
+                    "description": "The type of the text.",
+                    "name": "typ",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Fetches long text for a given hotel number, short text, and type.",
+            "id": "SIHOTGETLONGTEXT",
+            "name": "SIHOTGETLONGTEXT",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The short text reference.",
+                    "name": "shortText",
+                    "type": "string"
+                },
+                {
+                    "description": "The type of the text.",
+                    "name": "typ",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Fetches event room information for a given hotel, date, time, room, and format.",
+            "id": "SIHOTGETEVENTROOMINFO",
+            "name": "SIHOTGETEVENTROOMINFO",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The event date in string format.",
+                    "name": "datum",
+                    "type": "string"
+                },
+                {
+                    "description": "The event time in string format.",
+                    "name": "zeit",
+                    "type": "string"
+                },
+                {
+                    "description": "The room identifier.",
+                    "name": "room",
+                    "type": "string"
+                },
+                {
+                    "description": "The format of the event room information.",
+                    "name": "xformat",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Fetches yield forecast information for a given hotel, dates, and additional parameters.",
+            "id": "SIHOTGETYIELDFORECAST2",
+            "name": "SIHOTGETYIELDFORECAST2",
+            "parameters": [
+                {
+                    "description": "The hotel number.",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "The YFC date.",
+                    "name": "yfcDate",
+                    "type": "string"
+                },
+                {
+                    "description": "The yield date.",
+                    "name": "yieldDate",
+                    "type": "string"
+                },
+                {
+                    "description": "The scope of the forecast.",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "The global reservation art.",
+                    "name": "globalResArt",
+                    "type": "string"
+                },
+                {
+                    "description": "The market code.",
+                    "name": "marketCode",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Yield Forecast Date Range",
+            "id": "SIHOTGETYIELDFORECASTDATERANGE",
+            "name": "SIHOTGETYIELDFORECASTDATERANGE",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Yield forecast date",
+                    "name": "yfcDate",
+                    "type": "string"
+                },
+                {
+                    "description": "Yield date",
+                    "name": "yieldDate",
+                    "type": "string"
+                },
+                {
+                    "description": "Yield date until",
+                    "name": "yieldDateUntil",
+                    "type": "string"
+                },
+                {
+                    "description": "Scope",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "Global resource art",
+                    "name": "globalResArt",
+                    "type": "string"
+                },
+                {
+                    "description": "Market code",
+                    "name": "marketCode",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Yield Forecast",
+            "id": "SIHOTGETYIELDFORECAST",
+            "name": "SIHOTGETYIELDFORECAST",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Yield date",
+                    "name": "yieldDate",
+                    "type": "string"
+                },
+                {
+                    "description": "Scope",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "Global resource art",
+                    "name": "globalResArt",
+                    "type": "string"
+                },
+                {
+                    "description": "Market code",
+                    "name": "marketCode",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Initial Guest Forecast",
+            "id": "SIHOTGETINITGUESTFORECAST",
+            "name": "SIHOTGETINITGUESTFORECAST",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Area",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "Scope",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "Market code",
+                    "name": "marketCode",
+                    "type": "string"
+                },
+                {
+                    "description": "Category",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Flag",
+                    "name": "flag",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "Max start date",
+                    "name": "maxVon",
+                    "type": "string"
+                },
+                {
+                    "description": "Max end date",
+                    "name": "maxBis",
+                    "type": "string"
+                },
+                {
+                    "description": "Guest number",
+                    "name": "guestNo",
+                    "type": "string"
+                },
+                {
+                    "description": "Include subsidiaries",
+                    "name": "inclSubsidiaries",
+                    "type": "boolean"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Guest Statistic",
+            "id": "SIHOTGETGUESTSTATISTIC",
+            "name": "SIHOTGETGUESTSTATISTIC",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Type",
+                    "name": "typ",
+                    "type": "string"
+                },
+                {
+                    "description": "Subtype",
+                    "name": "subtyp",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "Guest number",
+                    "name": "guestNo",
+                    "type": "string"
+                },
+                {
+                    "description": "Include subsidiaries",
+                    "name": "inclSubsidiaries",
+                    "type": "boolean"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Availability",
+            "id": "SIHOTGETAVAILABILITY",
+            "name": "SIHOTGETAVAILABILITY",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Type",
+                    "name": "typ",
+                    "type": "string"
+                },
+                {
+                    "description": "Category",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Include pseudo",
+                    "name": "includePseudo",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get hotel restrictions",
+            "id": "SIHOTGETRESTRICTIONS",
+            "name": "SIHOTGETRESTRICTIONS",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Area name",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "Key identifier",
+                    "name": "key",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Get hotel segmentation forecast",
+            "id": "SIHOTGETINITSEGMENTATIONFORECAST",
+            "name": "SIHOTGETINITSEGMENTATIONFORECAST",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Area name",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "Scope of forecast",
+                    "name": "scope",
+                    "type": "string"
+                },
+                {
+                    "description": "Market code",
+                    "name": "marketCode",
+                    "type": "string"
+                },
+                {
+                    "description": "Category",
+                    "name": "cat",
+                    "type": "string"
+                },
+                {
+                    "description": "Flag",
+                    "name": "flag",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "Max start date",
+                    "name": "maxVon",
+                    "type": "string"
+                },
+                {
+                    "description": "Max end date",
+                    "name": "maxBis",
+                    "type": "string"
+                },
+                {
+                    "description": "Guest number",
+                    "name": "guestNo",
+                    "type": "string"
+                },
+                {
+                    "description": "Include subsidiaries flag",
+                    "name": "inclSubsidiaries",
+                    "type": "boolean"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get hotel initial segmentation",
+            "id": "SIHOTGETINITSEGMENTATION",
+            "name": "SIHOTGETINITSEGMENTATION",
+            "parameters": [
+                {
+                    "description": "Hotel number",
+                    "name": "hotelNr",
+                    "type": "number"
+                },
+                {
+                    "description": "Area name",
+                    "name": "area",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date",
+                    "name": "von",
+                    "type": "string"
+                },
+                {
+                    "description": "End date",
+                    "name": "bis",
+                    "type": "string"
+                },
+                {
+                    "description": "Revenue area",
+                    "name": "revenueArea",
+                    "type": "string"
+                },
+                {
+                    "description": "Flag",
+                    "name": "flag",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get hotel segmentation data",
+            "id": "SIHOTGETSEGMENTATION",
+            "name": "SIHOTGETSEGMENTATION",
+            "parameters": [
+                {
+                    "description": "Key 1",
+                    "name": "key1",
+                    "type": "string"
+                },
+                {
+                    "description": "Key 2",
+                    "name": "key2",
+                    "type": "string"
+                },
+                {
+                    "description": "Key 3",
+                    "name": "key3",
+                    "type": "string"
+                },
+                {
+                    "description": "Key 4",
+                    "name": "key4",
+                    "type": "string"
+                },
+                {
+                    "description": "Optional flag",
+                    "name": "flag",
+                    "optional": true,
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get purchase currency exchange",
+            "id": "SIHOTGETPURCHASECURRENCYEXCHANGE",
+            "name": "SIHOTGETPURCHASECURRENCYEXCHANGE",
+            "parameters": [
+                {
+                    "description": "Currency code",
+                    "name": "waehrung",
+                    "type": "string"
+                },
+                {
+                    "description": "Amount",
+                    "name": "betrag",
+                    "type": "string"
+                },
+                {
+                    "description": "Date",
+                    "name": "datum",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get sell currency exchange",
+            "id": "SIHOTGETSELLCURRENCYEXCHANGE",
+            "name": "SIHOTGETSELLCURRENCYEXCHANGE",
+            "parameters": [
+                {
+                    "description": "Currency code",
+                    "name": "waehrung",
+                    "type": "string"
+                },
+                {
+                    "description": "Amount",
+                    "name": "betrag",
+                    "type": "string"
+                },
+                {
+                    "description": "Date",
+                    "name": "datum",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Perform price calculation",
+            "id": "SIHOTDOPRICE",
+            "name": "SIHOTDOPRICE",
+            "parameters": [
+                {
+                    "description": "Key field used for price calculation",
+                    "name": "key",
+                    "type": "string"
+                },
+                {
+                    "description": "Start date for price range",
+                    "name": "fromDate",
+                    "type": "string"
+                },
+                {
+                    "description": "End date for price range",
+                    "name": "toDate",
+                    "type": "string"
+                },
+                {
+                    "description": "Array of 15 prices",
+                    "name": "prices",
+                    "repeating": true,
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Load prices",
+            "id": "SIHOTDOLOADPRICES",
+            "name": "SIHOTDOLOADPRICES",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Reset prices",
+            "id": "SIHOTDORESETPRICES",
+            "name": "SIHOTDORESETPRICES",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Subroutine to load prices (wrapper around SIHOTDoLoadPrices)",
+            "id": "SIHOTLOADPRICES",
+            "name": "SIHOTLOADPRICES",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Subroutine to reset prices (wrapper around SIHOTDoResetPrices)",
+            "id": "SIHOTRESETPRICES",
+            "name": "SIHOTRESETPRICES",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Print username to test config loading",
+            "id": "SIHOTTESTCONFIG",
+            "name": "SIHOTTESTCONFIG",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Print Hello world.",
+            "id": "SIHOTTEST",
+            "name": "SIHOTTEST",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        }
+    ]
+}
