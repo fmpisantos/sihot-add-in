@@ -46,14 +46,18 @@ label {
     font-weight: 500;
 }
 
-input:not([type="submit"]) {
+<<<<<<<< HEAD:5766d056f6c31b4382b7.css
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+========
+input:not([type="submit"]):not([type="radio"]):not([type="button"]) {
+>>>>>>>> 4598fe851d14a3a24f53e499d598c56a0966f99c:bf58d63d378aff08fc34.css
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
+    box
 
 .row {
     width: 100%;
