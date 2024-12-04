@@ -1032,24 +1032,6 @@
             "result": {
                 "type": "string"
             }
-        },
-        {
-            "description": "Print username to test config loading",
-            "id": "SIHOTTESTCONFIG",
-            "name": "SIHOTTESTCONFIG",
-            "parameters": [],
-            "result": {
-                "type": "string"
-            }
-        },
-        {
-            "description": "Print Hello world.",
-            "id": "SIHOTTEST",
-            "name": "SIHOTTEST",
-            "parameters": [],
-            "result": {
-                "type": "string"
-            }
         }
     ]
 }

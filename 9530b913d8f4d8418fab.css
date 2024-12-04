@@ -46,14 +46,14 @@ label {
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="number"] {
+input:not([type="radio"]) {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box
+    box-sizing: border-box;
+    font-size: 14px;
+}
 
 .row {
     width: 100%;
