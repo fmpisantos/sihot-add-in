@@ -11,7 +11,9 @@
     <DisplayName DefaultValue="Sihot Add-in" />
     <Description DefaultValue="SIHOT Add-in" />
     <IconUrl DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-32.png" />
-    <HighResolutionIconUrl DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-64.png" />
+    <HighResolutionIconUrl
+        DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-64.png" />
+    <!-- <SupportUrl DefaultValue="https://contoso.com/support " /> -->
     <AppDomains>
         <AppDomain>https://fmpisantos.github.io/sihot-add-in.com</AppDomain>
     </AppDomains>
@@ -87,9 +89,12 @@
         </Hosts>
         <Resources>
             <bt:Images>
-                <bt:Image id="Icon.16x16" DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-16.png" />
-                <bt:Image id="Icon.32x32" DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-32.png" />
-                <bt:Image id="Icon.80x80" DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-80.png" />
+                <bt:Image id="Icon.16x16"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-16.png" />
+                <bt:Image id="Icon.32x32"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-32.png" />
+                <bt:Image id="Icon.80x80"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/assets/icon-80.png" />
             </bt:Images>
             <bt:Urls>
                 <bt:Url id="Functions.Script.Url"
@@ -100,8 +105,10 @@
                     DefaultValue="https://fmpisantos.github.io/sihot-add-in/functions.html" />
                 <bt:Url id="GetStarted.LearnMoreUrl"
                     DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
-                <bt:Url id="Commands.Url" DefaultValue="https://fmpisantos.github.io/sihot-add-in/commands.html" />
-                <bt:Url id="Taskpane.Url" DefaultValue="https://fmpisantos.github.io/sihot-add-in/taskpane.html" />
+                <bt:Url id="Commands.Url"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/commands.html" />
+                <bt:Url id="Taskpane.Url"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/taskpane.html" />
             </bt:Urls>
             <bt:ShortStrings>
                 <bt:String id="Functions.Namespace" DefaultValue="SIHOT" />
@@ -113,6 +120,8 @@
                 <bt:String id="GetStarted.Description"
                     DefaultValue="SIHOT add-in loaded successfully. Go to the HOME tab and click the 'SIHOT' button to get started." />
                 <bt:String id="TaskpaneButton.Tooltip" DefaultValue="SIHOT Add-in" />
+                <bt:String id="Support.Url"
+                    DefaultValue="https://fmpisantos.github.io/sihot-add-in/support" />
             </bt:LongStrings>
         </Resources>
     </VersionOverrides>
